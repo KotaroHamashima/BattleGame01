@@ -11,3 +11,9 @@ body {
   text-align:center;
 
 }
+
+.finish {
+  background: #FFFF00;
+  pointer-events : none;
+  display: none;
+}
