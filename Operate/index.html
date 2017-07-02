@@ -11,13 +11,17 @@
   <div id="enemyHp">100</div>
   <div>vs</div>
   <div>自分</div>
-  <div id="myHp">HP</div>
-  <div>100</div>
+  <div>HP</div>
+  <div id="myHp">100</div>
   <div id="text">敵の攻撃！</div>
-  <input type="button" value="相手の攻撃" id="next" onclick="visiable();">
-  <button onclick="this.disabled = true;" id="next1">next1</button>
-  <button id="next2">next2</button>
-  <button id="next3">next3</button>
-  <script src="js/main.js"></script>
+  <button onclick="next1.style.visibility='visible';this.style.display='none'" id="next">相手の攻撃</button>
+  <button id="next1" style="visibility:hidden" onclick="next2.style.visibility='visible';this.style.display='none'">自分の攻撃</button>
+  <button id="next2" style="visibility:hidden" onclick="next3.style.visibility='visible';this.style.display='none'">相手の攻撃</button>
+  <button id="next3" style="visibility:hidden" onclick="this.style.display='none'">自分の攻撃</button>
+
+
+
+  <script src="js/main.js">
+  </script>
 </body>
 </html>
