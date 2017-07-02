@@ -1,12 +1,18 @@
 (function() {
   'use strict';
 
+
+  function visiable()
+{
+  teki.textContent = "Yeah!";
+}
+
   var next = document.getElementById("next");
 
   next.addEventListener("click", function() {
     var enemyAttack = Math.floor(Math.random() * 100);
     myHp.textContent = 100 - enemyAttack;
-    text.textContent = "自分は" + enemyAttack + "のダメージをくらった！"
+    text.textContent = "自分は" + enemyAttack + "のダメージをくらった！";
 
     nextElement.id = "next1";
     next1.addEventListener("click", function() {
@@ -28,16 +34,5 @@ next1.addEventListener("click", function() {
   enemyHp.textContent = 100 - myAttack;
   text.textContent = "相手は" + myAttack + "のダメージをくらった！"
 });
-
-var next2 = document.getElementById("next2");
-
-next2.addEventListener("click", function() {
-  var enemyAttack1 = Math.floor(Math.random() * 100);
-  myHp = enemyAttack1 + enemtAttack;
-  myHp.textContent = 100 - enemyAttack;
-  text.textContent = "自分は" + enemyAttack + "のダメージをくらった！"
-
-});
-
 
 })();
