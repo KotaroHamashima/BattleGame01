@@ -1,6 +1,19 @@
 (function() {
   'use strict';
 
+var name = document.getElementById("name");
+
+  name.addEventListener("click", function() {
+    name.className = "finish";//クラスネームをfinishにして消す
+    var form = document.getElementById("form");
+    form.className = "finish";//クラスネームをfinishにして消す
+
+    var userName = document.js.namae.value;
+    var me = document.getElementById("me");
+    me.textContent = userName;
+  });
+
+
   var myHpRest = 0;
   var enemyHpRest = 0;
 
