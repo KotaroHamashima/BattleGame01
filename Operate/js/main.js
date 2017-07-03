@@ -11,6 +11,20 @@ var name = document.getElementById("name");
     var userName = document.js.namae.value;
     var me = document.getElementById("me");
     me.textContent = userName;
+
+    // var teki = document.getElementById("teki");
+    // teki.className = "a";
+    document.getElementById('teki').style.display = 'block';
+    document.getElementById('tekiNoHp').style.display = 'block';
+    document.getElementById('enemyHp').style.display = 'block';
+    document.getElementById('vs').style.display = 'block';
+    document.getElementById('me').style.display = 'block';
+    document.getElementById('meNoHp').style.display = 'block';
+    document.getElementById('myHp').style.display = 'block';
+    document.getElementById('text').style.display = 'block';
+    document.getElementById('next').style.display = 'block';
+
+
   });
 
 

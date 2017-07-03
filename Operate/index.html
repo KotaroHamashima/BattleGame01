@@ -9,19 +9,19 @@
   <form name="js">
   <p id="form" class="form">名前を入力してください：<input type="text" name="namae" value="" size="40" maxlength="20"></p>
   </form>
-  <button id="name" class="name">GAME START</button>
-  <div id="teki">敵</div>
-  <div>HP</div>
-  <div id="enemyHp">100</div>
-  <div>vs</div>
-  <div id="me">自分</div>
-  <div>HP</div>
-  <div id="myHp">100</div>
-  <div id="text">敵の攻撃！</div>
+  <button id="name" class="name">CLICK TO START!</button>
+  <div id="teki" style="display: none;" class="startVision">敵</div>
+  <div id="tekiNoHp" style="display: none;">HP</div>
+  <div id="enemyHp" style="display: none;">100</div>
+  <div id="vs" style="display: none;";>vs</div>
+  <div id="me" style="display: none;">自分</div>
+  <div id="meNoHp" style="display: none;">HP</div>
+  <div id="myHp" style="display: none;">100</div>
+  <div id="text" style="display: none;">敵の攻撃！</div>
 
 
 <!-- 相手の攻撃 -->
-  <button id="next" onclick="next1.style.visibility='visible';next2.style.visibility='visible';next3.style.visibility='visible';this.style.display='none'">相手の攻撃</button>
+  <button id="next" style="display: none;" onclick="next1.style.visibility='visible';next2.style.visibility='visible';next3.style.visibility='visible';this.style.display='none'">相手の攻撃</button>
 
 <!-- 自分の攻撃 -->
   <button id="next1" style="visibility:hidden" onclick="next4.style.visibility='visible';this.style.display='none';next2.style.display='none';next3.style.display='none'">バランス攻撃</button>
