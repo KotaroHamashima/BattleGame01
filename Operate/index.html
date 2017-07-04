@@ -9,24 +9,25 @@
   <form name="js">
   <p id="form" class="form">名前を入力してください：<input type="text" name="namae" value="" size="40" maxlength="20"></p>
   </form>
-  <button id="name" class="name">GAME START</button>
-  <div id="teki">敵</div>
-  <div>HP</div>
-  <div id="enemyHp">100</div>
-  <div>vs</div>
-  <div id="me">自分</div>
-  <div>HP</div>
-  <div id="myHp">100</div>
-  <div id="text">敵の攻撃！</div>
+  <button id="name" class="name">CLICK TO START!</button>
+  <div id="teki" style="display: none;" class="startVision">敵</div>
+  <div id="tekiNoHp" style="display: none;">HP</div>
+  <div id="enemyHp" style="display: none;">100</div>
+  <div id="vs" style="display: none;";>vs</div>
+  <div id="me" style="display: none;">自分</div>
+  <div id="meNoHp" style="display: none;">HP</div>
+  <div id="myHp" style="display: none;">100</div>
+  <div id="text" style="display: none;">GAME START！</div>
 
 
-<!-- 相手の攻撃 -->
-  <button id="next" onclick="next1.style.visibility='visible';next2.style.visibility='visible';next3.style.visibility='visible';this.style.display='none'">相手の攻撃</button>
+<!-- 相手の攻撃-->
+  <button id="next" style="display: none;" onclick="next1.style.visibility='visible';next2.style.visibility='visible';next3.style.visibility='visible';this.style.display='none'">相手の攻撃</button>
 
 <!-- 自分の攻撃 -->
-  <button id="next1" style="visibility:hidden" onclick="next4.style.visibility='visible';this.style.display='none';next2.style.display='none';next3.style.display='none'">バランス攻撃</button>
-  <button id="next2" style="visibility:hidden" onclick="next4.style.visibility='visible';this.style.display='none';next1.style.display='none';next3.style.display='none'">普通攻撃(30ダメージ)</button>
-  <button id="next3" style="visibility:hidden" onclick="next4.style.visibility='visible';this.style.display='none';next1.style.display='none';next2.style.display='none'">チャレンジ攻撃</button>
+  <button id="next1" class="box1" style="visibility:hidden" onclick="next4.style.visibility='visible';this.style.display='none';next2.style.display='none';next3.style.display='none'">バランス攻撃</button>
+  <button id="next2" class="box1" style="visibility:hidden" onclick="next4.style.visibility='visible';this.style.display='none';next1.style.display='none';next3.style.display='none'">普通攻撃(30ダメージ)</button>
+  <button id="next3" class="box1" style="visibility:hidden" onclick="next4.style.visibility='visible';this.style.display='none';next1.style.display='none';next2.style.display='none'">チャレンジ攻撃</button>
+
 
 <!-- 相手の攻撃 -->
   <button id="next4" style="visibility:hidden" onclick="next5.style.visibility='visible';this.style.display='none';next5.style.visibility='visible';next6.style.visibility='visible';next7.style.visibility='visible'">相手の攻撃</button>
