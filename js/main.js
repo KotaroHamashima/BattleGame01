@@ -51,7 +51,7 @@ var name = document.getElementById("name");
     next.addEventListener("click", function() {
     var enemyAttack = Math.floor(Math.random() * 50);
     myHp.textContent = 100 - enemyAttack;
-    text.textContent = "自分は" + enemyAttack + "のダメージをくらった！";
+    text.textContent = "相手の攻撃で" + enemyAttack + "のダメージをくらった！";
     myHpRest = 100 - enemyAttack;
     // nextElement.id = "next1";
     // next1.addEventListener("click", function() {
@@ -69,7 +69,7 @@ next4.addEventListener("click", function() {
 var enemyAttack = Math.floor(Math.random() * 50);
 myHpRest = myHpRest - enemyAttack;
 if(myHpRest < 1) {
-  text.textContent = "自分は" + enemyAttack + "のダメージをくらった！あなたの負けです。"
+  text.textContent = "相手の攻撃で" + enemyAttack + "のダメージをくらった！あなたの負けです。"
   myHp.textContent = "0 【GameOver】"
 
   var next5Element = document.getElementById("next5");
@@ -80,7 +80,7 @@ if(myHpRest < 1) {
   next7Element.className = "finish"; //クラスネームfinish
 
 }else {
-  text.textContent = "自分は" + enemyAttack + "のダメージをくらった！";
+  text.textContent = "相手の攻撃で" + enemyAttack + "のダメージをくらった！";
   myHp.textContent = myHpRest
 }
 
@@ -96,7 +96,7 @@ next8.addEventListener("click", function() {
 var enemyAttack = Math.floor(Math.random() * 50);
 myHpRest = myHpRest - enemyAttack;
 if(myHpRest < 1) {
-  text.textContent = "自分は" + enemyAttack + "のダメージをくらった！あなたの負けです。"
+  text.textContent = "相手の攻撃で" + enemyAttack + "のダメージをくらった！あなたの負けです。"
   myHp.textContent = "0 【GameOver】"
 
   var next9Element = document.getElementById("next9");
@@ -108,7 +108,7 @@ if(myHpRest < 1) {
 
 
 }else {
-  text.textContent = "自分は" + enemyAttack + "のダメージをくらった！";
+  text.textContent = "相手の攻撃で" + enemyAttack + "のダメージをくらった！";
   myHp.textContent = myHpRest
 }
 
@@ -123,7 +123,7 @@ next12.addEventListener("click", function() {
 var enemyAttack = Math.floor(Math.random() * 50);
 myHpRest = myHpRest - enemyAttack;
 if(myHpRest < 1) {
-  text.textContent = "自分は" + enemyAttack + "のダメージをくらった！あなたの負けです。"
+  text.textContent = "相手の攻撃で" + enemyAttack + "のダメージをくらった！あなたの負けです。"
   myHp.textContent = "0 【GameOver】"
 
   var next13Element = document.getElementById("next13");
@@ -135,7 +135,7 @@ if(myHpRest < 1) {
 
 
 }else {
-  text.textContent = "自分は" + enemyAttack + "のダメージをくらった！";
+  text.textContent = "相手の攻撃で" + enemyAttack + "のダメージをくらった！";
   myHp.textContent = myHpRest
 }
 
@@ -151,7 +151,7 @@ next16.addEventListener("click", function() {
 var enemyAttack = Math.floor(Math.random() * 50);
 myHpRest = myHpRest - enemyAttack;
 if(myHpRest < 1) {
-  text.textContent = "自分は" + enemyAttack + "のダメージをくらった！あなたの負けです。"
+  text.textContent = "相手の攻撃で" + enemyAttack + "のダメージをくらった！あなたの負けです。"
   myHp.textContent = "0 【GameOver】"
 
   var next17Element = document.getElementById("next17");
@@ -163,7 +163,7 @@ if(myHpRest < 1) {
 
 
 }else {
-  text.textContent = "自分は" + enemyAttack + "のダメージをくらった！";
+  text.textContent = "相手の攻撃で" + enemyAttack + "のダメージをくらった！";
   myHp.textContent = myHpRest
 }
 
