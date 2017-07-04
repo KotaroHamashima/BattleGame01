@@ -22,14 +22,27 @@ var name = document.getElementById("name");
     document.getElementById('meNoHp').style.display = 'block';
     document.getElementById('myHp').style.display = 'block';
     document.getElementById('text').style.display = 'block';
-    document.getElementById('next').style.display = 'block';
+    //document.getElementById('next').style.display = 'block';
+    // document.getElementById("next1").style.visibility="visible";
+    // document.getElementById("next2").style.visibility="visible";
+    // document.getElementById("next3").style.visibility="visible";
+
+    var judge = Math.floor(Math.random() * 100);
+    if(judge < 50) {
+      document.getElementById('next').style.display = 'block';
+    }else {
+      document.getElementById("next1").style.visibility="visible";
+      document.getElementById("next2").style.visibility="visible";
+      document.getElementById("next3").style.visibility="visible";
+    }
+
 
 
   });
 
 
-  var myHpRest = 0;
-  var enemyHpRest = 0;
+  var myHpRest = 100;
+  var enemyHpRest = 100;
 
 //ーーーーーーーーーーーーーー相手の攻撃ターン１ーーーーーーーーーーーーーーーーーー
 
